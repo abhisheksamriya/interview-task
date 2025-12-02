@@ -14,7 +14,7 @@ export default function ThankYou() {
   const id = searchParams.get("id");
 
   useEffect(() => {
-    axios.get(`${API}/lead/${id}`).then((res) => setData(res.data));
+    axios.get(`${API}/api/lead/${id}`).then((res) => setData(res.data));
   }, []);
 
   return (

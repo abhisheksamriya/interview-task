@@ -70,7 +70,7 @@ export default function Form() {
     try {
       setTimer(60);
       setOtpSent(true);
-      await axios.post(`${API}/send-otp`, {
+      await axios.post(`${API}/api/send-otp`, {
         email: form.email,
       });
       alert("OTP sent to email!");
@@ -87,7 +87,7 @@ export default function Form() {
 
   const verifyOtp = async () => {
     try {
-      const res = await axios.post(`${API}/verify-otp`, {
+      const res = await axios.post(`${API}/api/verify-otp`, {
         email: form.email,
         otp,
       });
@@ -113,7 +113,7 @@ export default function Form() {
     }
 
     try {
-      const res = await axios.post(`${API}/submit`, form);
+      const res = await axios.post(`${API}/api/submit`, form);
 
       if (res.data.success) {
         navigate(`/thankyou?id=${res.data.id}`);
