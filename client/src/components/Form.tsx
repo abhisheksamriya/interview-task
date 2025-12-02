@@ -70,7 +70,7 @@ export default function Form() {
     try {
       setTimer(60);
       setOtpSent(true);
-      await axios.post(`https://form-data-n5c9.onrender.com/api/send-otp`, {
+      await axios.post(`${API}/api/send-otp`, {
         email: form.email,
       });
       alert("OTP sent to email!");
