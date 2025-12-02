@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/db/db.ts","./src/models/Lead.ts","./src/models/Otp.ts","./src/routes/route.ts","./src/utils/googleSheet.ts","./src/utils/sendOtp.ts"],"version":"5.9.3"}
