@@ -15,5 +15,5 @@ dist/
 build/
 out/
 
-
+server/google.json
 google.json
